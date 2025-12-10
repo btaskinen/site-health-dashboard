@@ -17,11 +17,22 @@
   align-items: center;
   background-color: var(--primary-800);
   overflow-y: auto;
-  padding: var(--padding-4xl)
+  padding: var(--padding-4xl);
 }
 
 .SiteHealthDashboard__metricsContainer {
   display: flex;
-  justify-content: space-between;
+  gap: var(--padding-3xl);
+  justify-content:center;
   width: 60vw;
+}
+
+@media (max-width: 480px) {
+  .SiteHealthDashboard__metricsContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: var(--padding-3xl);
+    gap: var(--padding-3xl);
+  }
 }

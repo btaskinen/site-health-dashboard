@@ -3,9 +3,10 @@
   flex: 1;
   flex-direction: column;
   gap: var(--padding-l);
+  width: 60vw;
 }
 
-.Chart__toggleSwitch {
+.Chart__toggleSwitch.MuiFormGroup-root {
   flex-direction: row;
 }
 
