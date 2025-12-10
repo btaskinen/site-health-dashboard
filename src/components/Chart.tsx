@@ -53,6 +53,7 @@ export const Chart = ({data}: Props) => {
         />
       </FormGroup>
       <LineChart
+        height={300}
         dataset={data}
         xAxis={[
           {
