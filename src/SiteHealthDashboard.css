@@ -1,0 +1,20 @@
+#root {
+  width: 100vw;
+}
+
+.SiteHealthDashboard {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.SiteHealthDashboard__mainContent {
+  display: flex;
+  flex: 1;
+  min-height: 0; 
+  flex-direction: column;
+  gap: var(--padding-3xl);
+  align-items: center;
+  background-color: var(--primary-800);
+  overflow-y: auto;
+}
