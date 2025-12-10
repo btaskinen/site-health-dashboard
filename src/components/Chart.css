@@ -1,0 +1,18 @@
+.Chart {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  gap: var(--padding-l);
+}
+
+.Chart__toggleSwitch {
+  flex-direction: row;
+}
+
+.Chart__toggleSwitch .css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase.Mui-checked {
+  color: var(--primary-200);
+}
+
+.Chart__toggleSwitch .css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase.Mui-checked+.MuiSwitch-track {
+  background-color: var(--primary-200);
+}
