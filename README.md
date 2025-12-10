@@ -10,7 +10,7 @@
 
 1. Clone the repository
 ```
-git clone [<your-repo-url>](https://github.com/btaskinen/site-health-dashboard.git)
+git clone https://github.com/btaskinen/site-health-dashboard.git
 cd site-health-dashboard
 ```
 
