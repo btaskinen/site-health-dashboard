@@ -17,4 +17,11 @@
   align-items: center;
   background-color: var(--primary-800);
   overflow-y: auto;
+  padding: var(--padding-4xl)
+}
+
+.SiteHealthDashboard__metricsContainer {
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
 }

@@ -1,0 +1,27 @@
+.MetricsCard {
+  --metrics-card-width: 150px;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--primary-400);
+  padding: var(--padding-l);
+  border-radius: var(--border-radius-standard);
+  gap: var(--padding-m);
+  width: var(--metrics-card-width);
+}
+
+.MetricsCard__currentValue {
+  align-self: center;
+}
+
+.MetricsCard__valuesContainer {
+  display: flex;
+  padding: var(--paddin-m);
+  justify-content: space-between;
+  
+}
+
+.MetricsCard__value {
+  display: flex;
+  flex-direction: column;
+  padding: 0 var(--padding-s) 0 var(--padding-s);
+}
