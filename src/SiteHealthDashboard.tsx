@@ -2,8 +2,12 @@ import './SiteHealthDashboard.css'
 import { Chart } from './components/Chart';
 import { Header } from './components/Header'
 import { MetricsCard } from './components/MetricsCard'
+import { useSensorData } from './hooks/useSensorData';
 
 export const SiteHealthDashboard = () => {
+
+  const data = useSensorData();
+
   const moistureCurrentValue = 8;
     const moistureMinValue = 4;
   const moistureMaxValue = 15;
@@ -32,7 +36,7 @@ export const SiteHealthDashboard = () => {
             unit='°C'
           />
         </div>
-        <Chart />
+        <Chart data={data} />
       </div>
     </div>
   )

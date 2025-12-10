@@ -1,10 +1,14 @@
 import './Chart.css'
 import { LineChart } from '@mui/x-charts'
-import sensorMockData from '../sensor_mock_data.json'
 import { useState } from 'react';
 import { FormControlLabel, FormGroup, Switch } from '@mui/material';
+import { type SensorData } from '../types';
 
-export const Chart = () => {
+type Props = {
+  data: SensorData
+}
+
+export const Chart = ({data}: Props) => {
   const [showMoisture, setShowMoisture] = useState(true);
   const [showTemperature, setShowTemperature] = useState(true);
 
@@ -15,10 +19,6 @@ export const Chart = () => {
   const handleShowTemperature = () => {
     showTemperature ? setShowTemperature(false) : setShowTemperature(true)
   }
-  const parsedData = sensorMockData.map(d => ({
-    ...d,
-    date: new Date(d.timestamp * 1000)
-  }));
 
   const series = [
     ...(showTemperature ? [{
@@ -55,7 +55,7 @@ export const Chart = () => {
       <LineChart
         width={900}
         height={400}
-        dataset={parsedData}
+        dataset={data}
         xAxis={[
           {
             dataKey: "date",
