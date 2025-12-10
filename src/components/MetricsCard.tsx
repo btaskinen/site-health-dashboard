@@ -2,9 +2,9 @@ import './MetricsCard.css';
 
 type Props = {
   title: string;
-  currentValue: number;
-  minValue: number;
-  maxValue: number;
+  currentValue: string;
+  minValue: string;
+  maxValue: string;
   unit: string;
 };
 
