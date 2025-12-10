@@ -1,4 +1,5 @@
 import './SiteHealthDashboard.css'
+import { Chart } from './components/Chart';
 import { Header } from './components/Header'
 import { MetricsCard } from './components/MetricsCard'
 
@@ -31,6 +32,7 @@ export const SiteHealthDashboard = () => {
             unit='°C'
           />
         </div>
+        <Chart />
       </div>
     </div>
   )
