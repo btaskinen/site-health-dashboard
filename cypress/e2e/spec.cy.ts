@@ -1,3 +1,5 @@
+/// <reference types="cypress" />
+
 describe('test dashboard', () => {
   beforeEach(() => {
     cy.visit('http://localhost:5173')
