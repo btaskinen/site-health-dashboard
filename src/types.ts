@@ -1,5 +1,6 @@
 export type SensorData = {
-  timestamp: Date,
+  timestamp: number,
   temperature_c: number,
   soil_moisture_pct: number,
+  date: Date,
 } []
