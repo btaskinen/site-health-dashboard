@@ -4,6 +4,8 @@ The Site Health Dashboard displays the temperature and moisture data from a sing
 
 Time dependency of the data is displayed in a line graph. The user has the option to display both temperature and moisture at once, or only one of the measurment series.
 
+This app was build as part of a technical assignment during a recruitment process. I was given five hours to complete the assignment. The app was updated afterwards, based on the feedback that I received on the assigment.
+
 ## Running the App Locally
 ### Prerequisites
 
