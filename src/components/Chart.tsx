@@ -1,5 +1,5 @@
 import './Chart.css'
-import { LineChart } from '@mui/x-charts'
+import { LineChart, type MarkElementProps } from '@mui/x-charts'
 import { useState } from 'react';
 import { FormControlLabel, FormGroup, Switch } from '@mui/material';
 import { type SensorData } from '../types';
@@ -64,7 +64,21 @@ export const Chart = ({data}: Props) => {
         ]}
         yAxis={yAsix}
         series={series}
+        colors={['#1b4332', '#74c69d']}
+        slots={{
+          mark: CustomMark,
+        }}
       />
     </div>
   )
+}
+
+const CustomMark = (props: MarkElementProps) => {
+  const { x, y, color } = props;
+
+  return (
+    <g>
+      <circle cx={x} cy={y} r={3} fill={color || 'currentColor'} />
+    </g>
+  );
 }
