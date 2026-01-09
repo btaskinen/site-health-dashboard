@@ -1,5 +1,9 @@
 # Site Health Dashboard
 
+The Site Health Dashboard displays the temperature and moisture data from a single sensor. The current temperature and moister values are displayed in metrics cards along with the minium and maximum values of the displayed measurement period.
+
+Time dependency of the data is displayed in a line graph. The user has the option to display both temperature and moisture at once, or only one of the measurment series.
+
 ## Running the App Locally
 ### Prerequisites
 
@@ -10,21 +14,26 @@
 
 1. Clone the repository
 ```
-git clone https://github.com/btaskinen/site-health-dashboard.git
-cd site-health-dashboard
+  git clone https://github.com/btaskinen/site-health-dashboard.git
+  cd site-health-dashboard
 ```
 
 2. Install dependencies
 ```   
-npm install
+  npm install
 ```
 
 ### Development
 
 1. Start the development server
 ``` 
-npm run dev
+  npm run dev
 ```
 
 2. Open your browser
 The app will be available at http://localhost:5173
+
+
+### End-to-End Testing
+
+End-to-End testing was set up with Cypress. To run the tests use command `npx cypress open`.
