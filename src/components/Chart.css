@@ -3,11 +3,12 @@
   flex: 1;
   flex-direction: column;
   gap: var(--padding-l);
-  width: 60vw;
+  width: 90vw;
 }
 
 .Chart__toggleSwitch.MuiFormGroup-root {
   flex-direction: row;
+  align-self: center;
 }
 
 .Chart__toggleSwitch .css-aqlqb4-MuiButtonBase-root-MuiSwitchBase-root-MuiSwitch-switchBase.Mui-checked {
