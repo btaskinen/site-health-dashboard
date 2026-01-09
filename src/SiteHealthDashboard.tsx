@@ -8,8 +8,6 @@ export const SiteHealthDashboard = () => {
 
   const { data, loading, error} = useSensorData();
 
-  console.log(data);
-
   if (loading) return (<div>Loading data...</div>)
   if (error) return (<div>Something went wrong.</div>)
 

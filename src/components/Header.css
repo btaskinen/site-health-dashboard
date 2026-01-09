@@ -3,4 +3,5 @@
   align-items: center;
   width: 100%;
   background-color: var(--primary-300);
+  padding: var(--padding-m);
 }
