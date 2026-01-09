@@ -28,11 +28,13 @@
 }
 
 @media (max-width: 480px) {
+  .SiteHealthDashboard__mainContent {
+    padding: var(--padding-xxl);
+  }
   .SiteHealthDashboard__metricsContainer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-top: var(--padding-3xl);
     gap: var(--padding-3xl);
   }
 }
