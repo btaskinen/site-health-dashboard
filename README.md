@@ -8,7 +8,7 @@ This app was build as part of a technical assignment during a recruitment proces
 
 <img width="1440" height="794" alt="Screenshot 2026-01-09 at 11 55 49" src="https://github.com/user-attachments/assets/faeb99f7-ceee-4e41-86de-9d5aa569829d" />
 
-[Watch Demo](demo.mov)
+![site-health-demo-gif](https://github.com/user-attachments/assets/05595ab4-7741-4181-85de-36a3d5d3d513)
 
 ## Running the App Locally
 ### Prerequisites
