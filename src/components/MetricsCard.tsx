@@ -15,12 +15,12 @@ export const MetricsCard = ({ title, currentValue, minValue, maxValue, unit }: P
       <h1 className="MetricsCard__currentValue">{currentValue}{unit}</h1>
       <div className='MetricsCard__valuesContainer'>
         <div className='MetricsCard__value'>
-          <h5>{minValue}{unit}</h5>
           <div>min</div>
+          <h5>{minValue}{unit}</h5>
         </div>
         <div className='MetricsCard__value'>
-          <h5>{maxValue}{unit}</h5>
           <div>max</div>
+          <h5>{maxValue}{unit}</h5>
         </div>
       </div>
     </div>
